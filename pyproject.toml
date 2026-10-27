@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aetervan-loraefficiency"
+version = "0.1.0"
+description = "汇总显存、训练时长与推理成本，给出效率指标"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "aetervan" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://aetervan.github.io"
+Repository = "https://github.com/aetervan/loraefficiency"
+Issues = "https://github.com/aetervan/loraefficiency/issues"
+
+[project.scripts]
+loraefficiency = "loraefficiency:main"
+
+[tool.setuptools]
+py-modules = ["loraefficiency"]
